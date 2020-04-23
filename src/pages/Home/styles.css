@@ -1,0 +1,73 @@
+
+.header-conteiner{    
+    background-color: #231f20;
+    position: fixed;
+    color: #ffc20a;
+    width: 100%;
+    height: 9vw;
+    display: flex;
+}
+
+.home .header-conteiner .logoTipo{
+    max-width: 25%; 
+}
+
+.header-conteiner .menu{
+    width: auto;
+    margin-right: 1%;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-top: auto;
+    position: relative;
+    display: flex;
+    max-width: 500px;
+}
+.home .header-conteiner .menu li{
+    list-style-type: none;
+    width: auto;
+    height: auto;
+    margin: auto;
+    width: 6em
+}
+
+.home .header-conteiner .menu li:hover{
+    background-color: #53441c;
+}
+
+.header-conteiner .menu .menuItems{
+    color: #ffc20a;
+}
+
+.home .conteudo{
+    padding-top: 9vw;
+    width: 100%;
+}
+
+.home .conteudo .apresentacao{ 
+    height: 100vh;
+}
+
+.home .conteudo .apresentacao .texto{ 
+    padding-top: 15vh;
+    padding-left: 15vh;
+}
+
+.home .conteudo .produtos{ 
+    height: 100vh;
+}
+.home .conteudo .produtos .texto{ 
+    padding-top: 15vh;
+    padding-left: 40vh;
+}
+
+.home .conteudo .conclusao{   
+    height: 50vh;
+}
+.home .conteudo .conclusao .texto{ 
+    padding-top: 15vh;
+    padding-left: 70vh;
+}
+.home .conteudo .fundo{
+    width: 100%;
+}
+
