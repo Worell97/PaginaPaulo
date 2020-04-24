@@ -1,46 +1,8 @@
 
-.header-conteiner{    
-    background-color: #231f20;
-    position: fixed;
-    color: #ffc20a;
-    width: 100%;
-    height: 9vw;
-    display: flex;
-}
-
-.home .header-conteiner .logoTipo{
-    max-width: 25%; 
-}
-
-.header-conteiner .menu{
-    width: auto;
-    margin-right: 1%;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-top: auto;
-    position: relative;
-    display: flex;
-    max-width: 500px;
-}
-.home .header-conteiner .menu li{
-    list-style-type: none;
-    width: auto;
-    height: auto;
-    margin: auto;
-    width: 6em
-}
-
-.home .header-conteiner .menu li:hover{
-    background-color: #53441c;
-}
-
-.header-conteiner .menu .menuItems{
-    color: #ffc20a;
-}
-
 .home .conteudo{
-    padding-top: 9vw;
-    width: 100%;
+    padding-top: 12vh;
+    width: 100vw;
+    height: 100vh;
 }
 
 .home .conteudo .apresentacao{ 
@@ -49,7 +11,7 @@
 
 .home .conteudo .apresentacao .texto{ 
     padding-top: 15vh;
-    padding-left: 15vh;
+    padding-left: 15vw;
 }
 
 .home .conteudo .produtos{ 
@@ -57,7 +19,7 @@
 }
 .home .conteudo .produtos .texto{ 
     padding-top: 15vh;
-    padding-left: 40vh;
+    padding-left: 40vw;
 }
 
 .home .conteudo .conclusao{   
@@ -65,9 +27,10 @@
 }
 .home .conteudo .conclusao .texto{ 
     padding-top: 15vh;
-    padding-left: 70vh;
+    padding-left: 70vw;
 }
 .home .conteudo .fundo{
-    width: 100%;
+    width: 100vw;
+    height: 100vw;
 }
 

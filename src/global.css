@@ -1,13 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
-
 *{
     margin: 0;
     padding: 0;
     outline: 0;
-    width: 100%;
-    box-sizing: border-box;
-    max-height: 100vw;
+    box-sizing: border-box;    
+    font-size:24;
+    @media (min-width: 768px) {
+      font-size: 18;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 16;
+    }
 }
+
 @font-face {
     font-family: 'Sui';
     src: URL('./sui\ generis\ rg.ttf') format('truetype');

@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import { FiLogIn } from 'react-icons/fi';
-import { Link, useHistory } from 'react-router-dom';
 import './styles.css';
-import LogoImg from '../../assets/Logo-Amarelo.png';
 import Fundo1 from '../../assets/imagemFundo1.jpg';
 import Fundo2 from '../../assets/imagemFundo2.jpg';
 import Fundo3 from '../../assets/imagemFundo3.jpg';
 import api from '../../services/api';
+import Toolbar from './../../components/toolBar/toolBar';
+import SideDrawer from './../../components/SideDrawer/SideDrawer';
+import BackDrop from './../../components/BackDrop/BackDrop';
 
 export default function Logon(){
     const [id, setId] = useState('');
+    const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
     const history = useHistory('');
 
     async function handleLogin(e){
@@ -24,31 +26,22 @@ export default function Logon(){
         }
 
     }
+      function toggleClickHandler(prevState){
+        setSideDrawerOpen(!prevState.sideDrawerOpen);
+      };
 
+      function backDropClickHandler(){
+        setSideDrawerOpen(false);
+      };
+        let backDrop;
+        if (sideDrawerOpen){
+          backDrop = <BackDrop click={backDropClickHandler}/>
+        };
     return(
         <div className="home">
-            <div className="header-conteiner">
-                <Link to="/" className="logoTipo">
-                    <img src={LogoImg} alt="logo tipo"/>       
-                </Link>
-                <ul className="menu">
-                    <li>                    
-                        <Link className="menuItems" to="/Empresa">
-                            Empresa
-                        </Link>      
-                    </li>
-                    <li>                    
-                        <Link className="menuItems" to="/Produtos">
-                            Produtos
-                        </Link>      
-                    </li>
-                    <li>                    
-                        <Link className="menuItems" to="/Contato/New">
-                            Contato
-                        </Link>      
-                    </li>
-                </ul>
-            </div>
+            <Toolbar toggleClickHandler={toggleClickHandler}/>
+            <SideDrawer show={sideDrawerOpen}/>
+            {backDrop}
             <div className="conteudo">
                 <div className='apresentacao' style={{backgroundImage: `URL(${Fundo1})`}}>
                     <div className='texto'>
