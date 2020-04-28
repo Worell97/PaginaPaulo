@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FiArrowLeft, FiPower } from 'react-icons/fi';
 import { Link, useHistory } from 'react-router-dom';
 import './styles.css';
-import LogoImg from '../../assets/Logo-Amarelo.png';
+import Fundo1 from '../../assets/imagemFundo1-1080.jpg';
 import api from '../../services/api';
 import Toolbar from './../../components/toolBar/toolBar';
 import SideDrawer from './../../components/SideDrawer/SideDrawer';
@@ -45,7 +45,7 @@ export default function NewContact(){
         backDrop = <BackDrop click={backDropClickHandler}/>
       };
     return(
-        <div className="new-incident-conteiner">
+        <div className="new-incident-conteiner" style={{backgroundImage: `URL(${Fundo1})`}}>
             <div className="content">                    
                 <Toolbar toggleClickHandler={toggleClickHandler}/>
                 <SideDrawer show={sideDrawerOpen}/>

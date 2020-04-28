@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import { FiLogIn } from 'react-icons/fi';
 import './styles.css';
-import Fundo1 from '../../assets/imagemFundo1.jpg';
-import Fundo2 from '../../assets/imagemFundo2.jpg';
-import Fundo3 from '../../assets/imagemFundo3.jpg';
 import api from '../../services/api';
 import Toolbar from './../../components/toolBar/toolBar';
 import SideDrawer from './../../components/SideDrawer/SideDrawer';
@@ -44,24 +41,47 @@ export default function Logon(){
             <SideDrawer show={sideDrawerOpen}/>
             {backDrop}
             <div className="conteudo">
-                <div className='apresentacao' style={{backgroundImage: `URL(${Fundo1})`}}>
+                <div className='apresentacao'>
                     <div className='texto'>
                         Mais performace e segurança para o seu veículo
                     </div>
                 </div>
-                <div className='produtos' style={{backgroundImage: `URL(${Fundo2})`}}>
+                <div className='produtos'>
                     <div className='texto'>
                         Produtos de qualidade e excelência
                     </div>
-                </div>
-                <div className="conclusao" style={{backgroundImage: `URL(${Fundo3})`}}>
+                </div> 
+                <div className="conclusao">
                     <div className='texto'>
                         O melhor atendimento
                     </div>
-                </div>        
+                    <div className="items">
+                        <div className="item-1">
+                            <h2>Contato</h2>
+                            <h3>+55 (44) 9996-3639</h3>
+                            <div className="localizacao-horario">
+                                <div className="localizacao">
+                                    <h4>Localização</h4>
+                                    <div className="endereco">Rua Manoel Ramires, 1394, Marginal Rodoviaria PR-323 Parque industrial 1, Umuarama-PR</div>
+                                    
+                                    <h4>Email</h4>
+                                    <div className="email">contato@attacklub.com.br</div>
+                                </div>    
+                                <div className="horario">
+                                    <h4>Horários</h4>
+                                    <div className="dia">Segunda a sexta</div>
+                                    <div className="hora">8:00 as 18:00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="item-2">
+                            
+                        </div>
+                    </div>                    
+                </div>   
             </div>
-            <div className="footer">                
-            </div>
+            <div className="footer">                 
+            </div>              
         </div>
     );
 }

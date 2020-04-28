@@ -1,19 +1,27 @@
 .side-drawer {
+    display: none;
     height: 30vh;
     background-color: transparent;
     position: fixed;
     top: -30vh;
     right: 0vw;
-    width: 40vw;
+    width: 35vw;
     max-width: 400px;
     z-index: 200;
     transform: translatey(0vh);
     transition: 0.5s ease-out;
 }
 
+@media screen and (max-width: 600px) 
+{
+    .side-drawer {
+      display: flex;
+    }
+}
+
 .side-drawer.open {
     transform: translatey(30vh);
-    padding: 2.5rem;
+    right: 1vw;
     padding-left: 0rem;
     padding-top: 5rem;
 }

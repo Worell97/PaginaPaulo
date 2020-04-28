@@ -41,7 +41,7 @@ export default function Profile(){
         <div className="profile-conteiner">
             <header>
             </header>
-            <h1>Casos cadastrados</h1>
+            <h1>Produtos</h1>
             <ul>
                 {incidents
                     .map(

@@ -1,9 +1,8 @@
 .new-incident-conteiner{
-    width: 100%;
-    max-width: 1120px;
+    width: 100vw;
     height: 100vh;
     margin: 0 auto;
-
+    border-radius: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,9 +10,11 @@
 
 .new-incident-conteiner .content{
     width: 100%;
-    padding: 96px;
-    background:rgb(249, 233, 192);
-    box-shadow: 0 0 100px #fdcc0e;
+    padding: 5rem;
+    max-width: 1120px;
+    background:#231f20;
+    box-shadow: 0 0 500px#231f20;
+    border-radius: 0.5rem;
 
     justify-content: space-between;
     align-items: center;
