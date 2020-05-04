@@ -40,11 +40,19 @@
     display: flex;
 }
 
-@media (min-width: 600px){
+@media (min-width: 601px){
     .toolbar_navigation-items{
         display: flex;
     }
 }
+
+@media (min-width: 1000px){
+    .toolbar_logo img{ 
+        width: 28vw;  
+        height: 12vh;
+    }
+}
+
 .toolbar_navigation-items li{
     border-radius: 0.5rem;
     padding-top: 4.5vh;

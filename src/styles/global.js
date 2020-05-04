@@ -64,7 +64,7 @@ export const Global = createGlobalStyle`
     .button{
         width: 100%;
         height: 60px;
-        background: #e02041;
+        background: #ffc20a;
         border: 0;
         border-radius: 8px;
         color: #fff;

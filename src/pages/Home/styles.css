@@ -5,6 +5,7 @@
 }
 
 .home .conteudo .apresentacao{ 
+    width: 100vw;
     height: 100vh;
     background-image: url('../../assets/imagemFundo1-1080.jpg');
     background-size: cover;
@@ -16,6 +17,7 @@
 }
 
 .home .conteudo .produtos{ 
+    width: 100vw;
     height: 100vh;
     background-image: url('../../assets/imagemFundo2-1080.jpg');
     background-size: cover;
@@ -26,7 +28,8 @@
 }
 
 .home .conteudo .conclusao{   
-    height: 100vh;
+    width: 100vw;
+    height: 60vh;
     background-image: url('../../assets/imagemFundo3-1080.jpg');
     background-size: cover;
 }
@@ -64,12 +67,61 @@
 
 .home .conteudo .conclusao .items .item-2{ 
     width: 50%;
+    color:#96a6b7;
     padding: 1rem;
+    padding-top: 6vh;
     border-radius: 8px;
     background-color: #231f20;
+    text-align: center;
 }
 
-@media screen and (max-width: 600px) 
+.home .conteudo .conclusao .items .item-2 .cadEmail .cadEmail-input{ 
+    width: auto;
+    border-radius: 5px;
+    padding:0.5rem 1rem;
+    margin: 1rem;
+    height: 100%;
+}
+
+.home .conteudo .conclusao .items .item-2 .cadEmail .cadEmail-button{ 
+    background: #ffc20a;
+    border: 0;
+    padding:0.5rem 1rem;
+    border-radius: 5px;
+    color: #231f20;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition: filter 0.2s;
+}
+.home .conteudo .conclusao .items .item-2 fieldset { 
+    display: flex;
+    border: none;
+}
+
+@media screen and (max-width: 1000px) 
+{  
+    .home .conteudo .conclusao{   
+        height: 80vh;
+    }  
+}
+
+@media screen and (max-width: 729px) 
+{  
+    .home .conteudo .conclusao{   
+        height: 85vh;
+    }  
+}
+
+
+@media screen and (max-width: 703px) 
+{  
+    .home .conteudo .conclusao{   
+        height: 90vh;
+    }  
+}
+
+@media screen and (max-width: 638px) 
 {
     .home .conteudo .apresentacao{
         background-image: url('../../assets/imagemFundo1-sm.jpg');
@@ -80,17 +132,27 @@
         background-size: cover;
     }
     .home .conteudo .conclusao{
-        background-image: none;
         background-image: url('../../assets/imagemFundo3-sm.jpg');
         background-size: cover;
+        font-size: smaller;
     }
     .home .conteudo .conclusao .items{ 
         display: inline;
     }.home .conteudo .conclusao .items .item-1{ 
-        width: 100%;
-        height: 40%;
+        width: 100vw;
+        height: 40vh;
     }.home .conteudo .conclusao .items .item-2{ 
-        width: 100%;
-        height: 40%;
+        width: 100vw;
+        height: 80vh;
+    }
+}
+
+
+
+@media screen and (max-width: 400px) 
+{  
+    .home .conteudo .conclusao{
+        height: 100vh;
+        font-size: smaller;
     }
 }

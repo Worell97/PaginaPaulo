@@ -3,6 +3,7 @@ import { FiLogIn } from 'react-icons/fi';
 import './styles.css';
 import api from '../../services/api';
 import Toolbar from './../../components/toolBar/toolBar';
+import Footer from './../../components/footer/footer';
 import SideDrawer from './../../components/SideDrawer/SideDrawer';
 import BackDrop from './../../components/BackDrop/BackDrop';
 import { Link, useHistory } from 'react-router-dom';
@@ -75,13 +76,25 @@ export default function Logon(){
                             </div>
                         </div>
                         <div className="item-2">
-                            
+                            <header>
+                                <h4>Cadastre-se aqui</h4>    
+                                <p> Fique por dentro das ultimas promoções e novidades</p>
+                            </header>
+                            <fieldset>
+                                <form method="post" action="#" className="cadEmail">
+                                    <input className="cadEmail-input" type="text" placeholder="Digite seu e-mail"/>
+                                    <button className="cadEmail-button">Enviar</button>
+                                </form>
+                            </fieldset>
+                            <footer>
+                                <small>"Ao cadastrar seu e-mail você aceita receber e-mails da Attack Lubrificantes. Você poderá cancelar o recebimento a qualquer momento"</small>
+
+                            </footer>
                         </div>
                     </div>                    
                 </div>   
             </div>
-            <div className="footer">                 
-            </div>              
+            <Footer/>             
         </div>
     );
 }
