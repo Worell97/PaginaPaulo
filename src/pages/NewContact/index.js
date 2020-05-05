@@ -7,6 +7,7 @@ import api from '../../services/api';
 import Toolbar from './../../components/toolBar/toolBar';
 import SideDrawer from './../../components/SideDrawer/SideDrawer';
 import BackDrop from './../../components/BackDrop/BackDrop';
+import imgAtendimento from './../../assets/Atendimento.png'
 
 export default function NewContact(){
     const history = useHistory();
@@ -46,46 +47,53 @@ export default function NewContact(){
       };
     return(
         <div className="new-incident-conteiner" style={{backgroundImage: `URL(${Fundo1})`}}>
-            <div className="content">                    
-                <Toolbar toggleClickHandler={toggleClickHandler}/>
-                <SideDrawer show={sideDrawerOpen}/>
-                {backDrop}
-                <section>
-                    <p>Deixe-nos aqui sua mensagem</p>
- 
-                    <Link className="back-link" to="/">
-                        <FiArrowLeft size={16} color="#ffc20a"/>
-                        Inicio
-                    </Link>                   
-                </section>    
-                <form onSubmit={handleNewContact}>
-                    <input 
-                        placeholder="Nome"
-                        value={name}
-                        onChange={e => setName(e.target.value)}
-                    
-                    />
-                    <textarea 
-                        placeholder="Mensagem"
-                        value={description}
-                        onChange={e => setDescription(e.target.value)}
-                    
-                    />
-                    <input 
-                        placeholder="Telefone"
-                        value={number}
-                        onChange={e => setNumber(e.target.value)}
-                    
-                    />
-                    <input 
-                        placeholder="Email"
-                        value={email}
-                        onChange={e => setEmail(e.target.value)}
-                    
-                    />
-                    <button className="button" type="submit">Confirmar</button>
-                </form>
-            </div>
+            <div className="columns">    
+                <div className="content">    
+                    <Toolbar toggleClickHandler={toggleClickHandler} main={false}/>
+                    <SideDrawer show={sideDrawerOpen}/>
+                    {backDrop}
+                    <section>
+                        <p>Deixe-nos aqui sua mensagem</p>
+    
+                        <Link className="back-link" to="/">
+                            <FiArrowLeft size={16} color="#ffc20a"/>
+                            Inicio
+                        </Link>                   
+                    </section>    
+                    <form onSubmit={handleNewContact}>
+                        <input 
+                            placeholder="Nome"
+                            value={name}
+                            onChange={e => setName(e.target.value)}
+                        
+                        />
+                        <textarea 
+                            placeholder="Mensagem"
+                            value={description}
+                            onChange={e => setDescription(e.target.value)}
+                        
+                        />
+                        <input 
+                            placeholder="Telefone"
+                            value={number}
+                            onChange={e => setNumber(e.target.value)}
+                        
+                        />
+                        <input 
+                            placeholder="Email"
+                            value={email}
+                            onChange={e => setEmail(e.target.value)}
+                        
+                        />
+                        <button className="button" type="submit">Confirmar</button>
+                    </form>
+                </div>
+                <div className="imgAtendimento">
+                    <picture>
+                        <img src={imgAtendimento}/>
+                    </picture>
+                </div>
+            </div>    
         </div>
     )
 }

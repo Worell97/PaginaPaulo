@@ -9,17 +9,17 @@ import BackDrop from './../../components/BackDrop/BackDrop';
 import { Link, useHistory } from 'react-router-dom';
 
 export default function Logon(){
-    const [id, setId] = useState('');
+    const [passWord, setpassWord] = useState('');
     const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
     const history = useHistory('');
 
     async function handleLogin(e){
         e.preventDefault();
         try {
-            const response = await api.post('sessions', {id});            
-            localStorage.setItem('ongId', id);
-            localStorage.setItem('ongName', response.data.name);
-            history.push('/profile');
+            const response = await api.post('sessions', {passWord});            
+            localStorage.setItem('userPassword', passWord);
+            localStorage.setItem('userName', response.data.name);
+            history.push('/admin');
         } catch (error) {
             alert('Falha no login, tente novamente.')            
         }
@@ -38,7 +38,7 @@ export default function Logon(){
         };
     return(
         <div className="home">
-            <Toolbar toggleClickHandler={toggleClickHandler}/>
+            <Toolbar toggleClickHandler={toggleClickHandler} ShowMainPage={true}/>
             <SideDrawer show={sideDrawerOpen}/>
             {backDrop}
             <div className="conteudo">
@@ -87,7 +87,7 @@ export default function Logon(){
                                 </form>
                             </fieldset>
                             <footer>
-                                <small>"Ao cadastrar seu e-mail você aceita receber e-mails da Attack Lubrificantes. Você poderá cancelar o recebimento a qualquer momento"</small>
+                                <small>"Ao cadastrar seu e-mail você aceita receber e-mails e promoções da Attack Lubrificantes. Você poderá cancelar o recebimento a qualquer momento"</small>
 
                             </footer>
                         </div>

@@ -6,12 +6,16 @@
 
 .home .conteudo .apresentacao{ 
     width: 100vw;
+    align-items: center;
     height: 100vh;
     background-image: url('../../assets/imagemFundo1-1080.jpg');
     background-size: cover;
 }
 
 .home .conteudo .apresentacao .texto{ 
+    color: #96a6b7;
+    text-justify: auto;
+    border-top: 6vh;
     padding-top: 5vh;
     padding-left: 5vw;
 }

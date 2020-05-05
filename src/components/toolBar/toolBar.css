@@ -25,8 +25,8 @@
 .spacer{
     flex: 1;
 }
-.toolbar_navigation-items{   
-    display: none;
+.toolbar_navigation-items{       
+    top: -30vh;
     height: 100%;
 }
 
