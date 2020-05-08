@@ -44,12 +44,16 @@ export default function Logon(){
             <div className="conteudo">
                 <div className='apresentacao'>
                     <div className='texto'>
-                        Mais performace e segurança para o seu veículo
+                        <p>
+                            Mais performace e segurança para o seu veículo
+                        </p>
                     </div>
                 </div>
                 <div className='produtos'>
                     <div className='texto'>
-                        Produtos de qualidade e excelência
+                        <p>
+                            Produtos de qualidade e excelência
+                        </p>
                     </div>
                 </div> 
                 <div className="conclusao">

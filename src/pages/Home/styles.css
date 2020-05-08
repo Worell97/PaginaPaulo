@@ -12,11 +12,67 @@
     background-size: cover;
 }
 
-.home .conteudo .apresentacao .texto{ 
+.home .conteudo .apresentacao .texto{
+    opacity: 0;
+    left: 0;
+    animation-name: SlideLeftToRigth;
+    -webkit-transform: skew(40deg); /* Chrome, Opera */
+        -ms-transform: skew(40deg); /* IE */
+            transform: skew(40deg);
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    width: 90vw;
+    background: black;
+    color: #96a6b7;
+    background-color: #453B39;
+    text-justify: auto;
+    padding-top: 2vh;
+}
+
+@keyframes SlideLeftToRigth{
+    0%, 25% {
+        -webkit-transform: skew(40deg); /* Chrome, Opera */
+            -ms-transform: skew(40deg); /* IE */
+                transform: skew(40deg);
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    75%, 100% {
+        opacity: 1;
+        transform: translateX(0px);
+        -webkit-transform: skew(40deg); /* Chrome, Opera */
+            -ms-transform: skew(40deg); /* IE */
+                transform: skew(40deg);
+    }
+}
+
+@keyframes SlideRigthToLeft{
+    0%, 25% {
+        -webkit-transform: skew(40deg); /* Chrome, Opera */
+            -ms-transform: skew(40deg); /* IE */
+                transform: skew(40deg);
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    75%, 100% {
+        opacity: 1;
+        transform: translateX(0px);
+        -webkit-transform: skew(40deg); /* Chrome, Opera */
+            -ms-transform: skew(40deg); /* IE */
+                transform: skew(40deg);
+    }
+}
+.home .conteudo .apresentacao .texto p{ 
+    -webkit-transform: skew(-35deg); /* Chrome, Opera */
+        -ms-transform: skew(-35deg); /* IE */
+            transform: skew(-35deg);
     color: #96a6b7;
     text-justify: auto;
-    border-top: 6vh;
-    padding-top: 5vh;
+    padding-top: 1vh;
+    padding-bottom: 2vh;
     padding-left: 5vw;
 }
 
@@ -26,9 +82,36 @@
     background-image: url('../../assets/imagemFundo2-1080.jpg');
     background-size: cover;
 }
+
 .home .conteudo .produtos .texto{ 
-    padding-top: 5vh;
-    padding-left: 40vw;
+    opacity: 0;
+    left: 0;
+    animation-name: SlideRigthToLeft;
+    -webkit-transform: skew(40deg); /* Chrome, Opera */
+        -ms-transform: skew(40deg); /* IE */
+            transform: skew(40deg);
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    width: 90vw;
+    background: black;
+    color: #96a6b7;
+    background-color: #453B39;
+    text-justify: auto;
+    padding-top: 2vh;
+}
+
+.home .conteudo .produtos .texto p{ 
+    -webkit-transform: skew(-35deg); /* Chrome, Opera */
+        -ms-transform: skew(-35deg); /* IE */
+            transform: skew(-35deg);
+    color: #96a6b7;
+    text-justify: auto;
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+    padding-left: 5vw;
 }
 
 .home .conteudo .conclusao{   
