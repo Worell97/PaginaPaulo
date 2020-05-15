@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { FiLogIn } from 'react-icons/fi';
-import './styles.css';
+import './styles.scss';
 import api from '../../services/api';
 import Toolbar from './../../components/toolBar/toolBar';
 import Footer from './../../components/footer/footer';
 import SideDrawer from './../../components/SideDrawer/SideDrawer';
 import BackDrop from './../../components/BackDrop/BackDrop';
 import { Link, useHistory } from 'react-router-dom';
+import FirstSection from './sections/first';
+import SecondSection from './sections/second';
 
 export default function Logon(){
     const [passWord, setpassWord] = useState('');
@@ -42,26 +44,14 @@ export default function Logon(){
             <SideDrawer show={sideDrawerOpen}/>
             {backDrop}
             <div className="conteudo">
-                <div className='apresentacao'>
-                    <div className='texto'>
-                        <p>
-                            Mais performace e segurança para o seu veículo
-                        </p>
-                    </div>
-                </div>
-                <div className='produtos'>
-                    <div className='texto'>
-                        <p>
-                            Produtos de qualidade e excelência
-                        </p>
-                    </div>
-                </div> 
-                <div className="conclusao">
+                <FirstSection/>
+                <SecondSection/>
+                <section className="conclusao">
                     <div className='texto'>
                         O melhor atendimento
                     </div>
                     <div className="items">
-                        <div className="item-1">
+                        <div className="item-1" data-aos="fade-right">
                             <h2>Contato</h2>
                             <h3>+55 (44) 9996-3639</h3>
                             <div className="localizacao-horario">
@@ -79,7 +69,7 @@ export default function Logon(){
                                 </div>
                             </div>
                         </div>
-                        <div className="item-2">
+                        <div className="item-2" data-aos="fade-left">
                             <header>
                                 <h4>Cadastre-se aqui</h4>    
                                 <p> Fique por dentro das ultimas promoções e novidades</p>
@@ -96,7 +86,7 @@ export default function Logon(){
                             </footer>
                         </div>
                     </div>                    
-                </div>   
+                </section>   
             </div>
             <Footer/>             
         </div>
