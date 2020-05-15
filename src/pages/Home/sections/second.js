@@ -11,7 +11,7 @@ import Produto6 from '../../../assets/produtos/produto6.jpg';
 const SecondSection = props => {
     return(
         <CardDeck>
-        <Card style={{ width: '18vw' }}>
+        <Card>
             <Card.Img variant="top" src={Produto1} />
             <Card.Body>
             <Card.Title>Produto 1</Card.Title>
