@@ -5,6 +5,7 @@
     left: 0;
     height: 12vh;
     background-color: #231f20;
+    z-index: 1040;
 }
 
 .toolbar_navigation{
