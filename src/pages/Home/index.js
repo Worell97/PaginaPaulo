@@ -9,7 +9,7 @@ export default function Logon(){
         <PageDefault>
             <CarouselCustom/>
             <SecondSection/>
-            <section className="conclusao">
+            <section className="Contato">
                 <div className='texto'>
                     O melhor atendimento
                 </div>
