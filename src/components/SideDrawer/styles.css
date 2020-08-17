@@ -3,8 +3,8 @@
     height: 30vh;
     background-color: transparent;
     position: fixed;
-    top: -30vh;
-    right: 36vw;
+    top: -150px;
+    right: 0vw;
     width: 35vw;
     max-width: 400px;
     z-index: 200;
@@ -14,7 +14,6 @@
 
 .side-drawer.open {
     transform: translatey(30vh);
-    right: 36vw;
     padding-left: 0rem;
     padding-top: 5rem;
 }

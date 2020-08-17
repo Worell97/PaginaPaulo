@@ -1,0 +1,9 @@
+.CardBox{
+	padding-top: 2vw;
+}
+.CardBox img{
+	max-width:240;
+	max-height:200px;
+	width: auto;
+	height: auto;
+}
