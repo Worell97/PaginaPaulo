@@ -14,25 +14,26 @@ export default function Logon(){
                     O melhor atendimento
                 </div>
                 <div className="items">
-                    <div className="item-1" data-aos="fade-right">
-                        <h2>Contato</h2>
-                        <h3>+55 (44) 9996-3639</h3>
-                        <div className="localizacao-horario">
-                            <div className="localizacao">
-                                <h4>Localização</h4>
-                                <div className="endereco">Rua Manoel Ramires, 1394, Marginal Rodoviaria PR-323 Parque industrial 1, Umuarama-PR</div>
-                                
-                                <h4>Email</h4>
-                                <div className="email">contato@attacklub.com.br</div>
-                            </div>    
-                            <div className="horario">
-                                <h4>Horários</h4>
-                                <div className="dia">Segunda a sexta</div>
-                                <div className="hora">8:00 as 18:00</div>
-                            </div>
+                    <div className="item-1">
+                        <div className="contato">
+                            <h3>Contato</h3>
+                            <h3>+55 (44) 9996-3639</h3>
+                        </div>
+                        <div className="localizacao">
+                            <h4>Localização</h4>
+                            <text>Rua Manoel Ramires, 1394, Marginal Rodoviaria PR-323 Parque industrial 1, Umuarama-PR</text>                                
+                        </div>    
+                        <div className="email">
+                            <h4>Email</h4>
+                            <text>contato@attacklub.com.br</text>
+                        </div>
+                        <div className="horario">
+                            <h4>Horários</h4>
+                            <div className="dia">Segunda a sexta</div>
+                            <div className="hora">8:00 as 18:00</div>
                         </div>
                     </div>
-                    <div className="item-2" data-aos="fade-left">
+                    <div className="item-2">
                         <header>
                             <h4>Cadastre-se aqui</h4>    
                             <p> Fique por dentro das ultimas promoções e novidades</p>

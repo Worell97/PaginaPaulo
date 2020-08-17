@@ -14,3 +14,49 @@
     background-color:#96a6b7;
     background-size: cover;
 }
+
+.items{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.items{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.item-1 .contato{
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+    grid-area: contato;
+}
+.item-1 .localizacao{
+    display: flex;
+    grid-area: localizacao;
+}
+.item-1 .localizacao text{  
+    padding: 0.4rem;  
+    align-items: center;
+    justify-items: space-between;
+}
+.item-1 .email{
+    align-items: center;
+    justify-items: space-between;
+    grid-area: email;
+}
+.item-1 .horario{
+    justify-items: space-between;
+    grid-area: horario;
+}
+.item-1{
+    padding: 1rem;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: 
+        "contato contato contato" 
+        "localizacao localizacao localizacao"
+        "email horario horario"
+    ;
+}
