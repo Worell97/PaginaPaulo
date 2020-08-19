@@ -12,6 +12,15 @@ export const FooterBase = styled.footer`
   @media (max-width: 800px) {
     margin-bottom: 50px;
   }
+  .Logo {
+    max-width: 300px;
+    max-height: 94px;
+  }
+  @media (max-width: 800px) {
+    .Logo {
+      max-width: 105px;
+	}
+}
 `;
 
 
