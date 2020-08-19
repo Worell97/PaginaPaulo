@@ -54,9 +54,37 @@
     max-width: 450px;
 }
 
+
+.new-incident-conteiner .content a{
+    font-size: 18px;
+    color: #737380;
+    line-height: 32px;
+}
+
 .new-incident-conteiner .content form input,
 .new-incident-conteiner .content form textarea{
-    margin-top: 8px;    
+    margin-top: 8px;  
+    width: 100%;  
+    border-radius: 0.2rem;
+}
+.buttonContact{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	outline: none;
+	border-radius: 5px;
+	text-decoration: none;
+    margin: 0.5rem 0;
+    border-radius: 0.3rem;
+    width: 100%;
+    height: 40px;
+    background-color: var(--secondary);
+	transition: opacity .3s;
+} 
+
+.buttonContact:hover,
+.buttonContact:focus {
+	opacity: .5;
 }
 
 @media screen and (max-width: 703px) 

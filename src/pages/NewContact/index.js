@@ -40,7 +40,7 @@ export default function NewContact(){
 
                             <Link className="back-link" to="/">
                                 <FiArrowLeft size={16} color="#ffc20a"/>
-                                Inicio
+                                <text>Inicio</text>
                             </Link>                   
                         </section>    
                         <form onSubmit={handleNewContact}>
@@ -68,7 +68,7 @@ export default function NewContact(){
                                 onChange={e => setEmail(e.target.value)}
                             
                             />
-                            <button className="button" type="submit">Confirmar</button>
+                            <button className="buttonContact" type="submit">Confirmar</button>
                         </form>
                     </form>
                 </div>    

@@ -26,6 +26,7 @@
 
 	background: var(--black);
 }
+
 body {
 	--bodyPaddingTop: 94px;
 	padding-top: var(--bodyPaddingTop);
@@ -33,6 +34,11 @@ body {
 @media (max-width: 800px) {
 	.Menu {
 		height: 40px;
+		width: 100vw;
+		justify-content: center;
+	}
+	.Menu nav{
+		width: 100vw;
 		justify-content: center;
 	}
 	body {
@@ -43,6 +49,7 @@ body {
 
 .ButtonLink {
 	box-sizing: border-box;
+	margin-left: 0.5rem;
 	cursor: pointer;
 	padding: 16px 24px;
 	font-style: normal;
@@ -60,14 +67,17 @@ body {
 }
 
 @media (max-width: 800px) {
-	a.ButtonLink {
+	.Menu nav{
 		position: fixed;
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background: var(--primary);
+		background: #231f20;
 		border-radius: 0;
 		border: 0;
 		text-align: center;
 	}
+}
+.Menu nav a{	
+	text-decoration: none;
 }
