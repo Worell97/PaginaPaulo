@@ -1,5 +1,9 @@
 .CardBox{
 	padding-top: 2vw;
+	max-width:100%;
+	min-width:100%;
+	width: auto;
+	height: auto;
 }
 .CardBox img{
 	max-width:240;
@@ -9,6 +13,6 @@
 }
 
 .CardBox .card{
-	background-color: #231f20;
-	color: #fff;
+	background-color: var(--white);
+	color: var(--black);
 }

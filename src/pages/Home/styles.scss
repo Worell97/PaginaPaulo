@@ -15,34 +15,54 @@
     background-size: cover;
 }
 .items{
+    margin-top: 2rem;
     display: flex;
     align-content: center;
     justify-content: space-between;
 }
-.item-1 .contato{
+.item-1{    
+    width: 40%;
+}
+.item-1 .Contact{
     display: flex;
     align-items: center;
     justify-items: space-between;
-    grid-area: contato;
+    grid-area: Contact;
 }
-.item-1 .localizacao{
+.items .ContactValue{
+    font-size: larger;
+    font-weight: bold;
+    grid-area: ContactValue;
+    text-align: center;
+    padding: 0.2rem 0;
+}
+.item-1 .Localization{
     display: flex;
-    grid-area: localizacao;
+    grid-area: Localization;
 }
-.item-1 .localizacao text{  
+.item-1 .LocalizationValue{
+    grid-area: LocalizationValue;
+    text-justify: center;
+}
+.item-1 .Localization text{  
     padding: 0.4rem;  
     align-items: center;
     justify-items: space-between;
 }
-.item-1 .email{
+.item-1 .Email{
     align-items: center;
     justify-items: space-between;
-    grid-area: email;
+    grid-area: Email;
 }
-.item-1 .horario{
+.item-1 .EmailValue{
+    grid-area: EmailValue;
+}
+.item-1 .Time{
     justify-items: space-between;
-    grid-area: horario;
+    grid-area: Time;
 }
+.item-1 .TimeValues{grid-area: TimeValues;}
+
 .item-1{
     border-radius: 1rem;
     margin: 0.5rem;
@@ -50,11 +70,13 @@
     padding: 1rem;
     background-color: #FFE021;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: auto auto auto auto;
     grid-template-areas: 
-        "contato contato contato" 
-        "localizacao localizacao localizacao"
-        "email horario horario"
+        'Contact ContactValue ContactValue ContactValue' 
+        'Localization . . .'
+        'LocalizationValue LocalizationValue LocalizationValue LocalizationValue'
+        'Email . Time Time'
+        'EmailValue EmailValue TimeValues TimeValues'
     ;
 }
 .item-2{
@@ -67,6 +89,7 @@
 }
 
 .item-2{
+    width: 60%;
     color: #fff;
     border-radius: 1rem;
     margin: 0.5rem;
@@ -78,6 +101,8 @@
 @media (max-width: 800px) {
 	.items{
         flex-direction: column;
+    }.items .Numero{
+        font-size: medium;
     }
     .item-1{        
         margin-right: 0.5rem;

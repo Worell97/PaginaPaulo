@@ -5,7 +5,7 @@ import Menu from '../Menu';
 import Footer from '../Footer';
 
 const Main = styled.main`
-    background-color: var(--black);
+    background-color: var(--white);
     flex: 1;
     padding-top: 50px;
     padding-left: 5%;
@@ -13,16 +13,16 @@ const Main = styled.main`
     ${({ paddingAll }) => css`
       padding: ${paddingAll};
     `
-};
+  };
 `;
 
 function PageDefault({ children, paddingAll, destino }) {
   return (
     <>
       <Menu destButton={destino} />
-				<Main paddingAll={paddingAll}>
-					{children}
-				</Main>
+      <Main paddingAll={paddingAll}>
+        {children}
+      </Main>
       <Footer />
     </>
   );
